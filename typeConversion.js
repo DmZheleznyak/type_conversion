@@ -26,7 +26,7 @@ class Pass {
 
         if ( 100 < this.numb < 200 ) {
           let returnValue = this.numb - 100
-          return this.numb - 100
+          return returnValue
         }
         
     }
