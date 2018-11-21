@@ -21,7 +21,6 @@
 //   return x < 100 && x > 100 ? 'pass' : 'fail'
 // }
 
-// var a = function() {};
 // var valueOfFunction = () => {
 //   var value = 10;
 //   return function() {
@@ -30,6 +29,9 @@
 //     return returnValue
 //   }
 // }
+
+var a = function() {};
+
 var valueOfFunctionTest2 = () => {
   var value = 10;
   return function() {
@@ -41,8 +43,6 @@ var valueOfFunctionTest2 = () => {
 
 a.valueOf = valueOfFunctionTest2()
 
-function test2( x ) {
-  console.log(x)
-  return 5 < x && 5 > x  ? 'pass' : 'fail'
-}
+const test2 = x => 5 < x && 5 > x  ? 'pass' : 'fail'
+
 test2(a)
